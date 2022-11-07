@@ -1,0 +1,44 @@
+body {
+    background-color: #87b3e1;
+    min-height: 105vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop {
+    position: fixed;
+    top: -1vh;
+    font-size: 2rem;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tab {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50px);
+    display: flex;
+    align-items: center;
+    background-color: black;
+    z-index: 99;
+}
+
+.tab > a {
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@keyframes fall {
+    to{
+        transform: translateY(101vh);
+    }
+}
