@@ -33,7 +33,6 @@ body{
 .img-box img{
     width: 100%;
     height: 100%;
-    /* 由于这里我的图片都是竖图，而容器是横向的，所以对图片做了以下处理，这里大家根据自己的图片进行调节即可 */
     /* 对图片进行剪切，保留原始比例 */
     object-fit: fill;
     /* object-position属性一般与object-fit一起使用，用来设置元素的位置 */
