@@ -40,7 +40,7 @@ body{
 }
 
 /* 默认最后一张展开 */
-.img-box:nth-child(6){
+.img-box:nth-child(1){
     width: 1000px;
 }
 /* 鼠标移入，图片展开 */

@@ -13,7 +13,7 @@ body {
 .draggable {
     position: absolute;
     display: inline-block;
-    width: 80px;
+    width: 60px;
 }
 
 #left {
