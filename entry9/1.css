@@ -4,7 +4,7 @@ body {
 
   #message1 {
     font-style: italic;
-    font-size: 10pt;
+    font-size: 13pt;
     text-align: center;
     color: rgb(0, 0, 0);
     display: block;
@@ -95,7 +95,7 @@ body {
 
     #message3 {
       font-style: italic;
-      font-size: 3vw;
+      font-size: 8pt;
       text-align: center;
       display: block;
     }
