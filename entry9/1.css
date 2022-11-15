@@ -1,0 +1,104 @@
+body {
+    background-color: Chartreuse;
+  }
+
+  #message1 {
+    font-style: italic;
+    font-size: 10pt;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: block;
+    /* show it on small screens */
+  }
+
+   #message2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15vw;
+    display: none;
+  }
+
+  #message3 {
+    font-style: italic;
+    font-size: 3vw;
+    text-align: center;
+    display: none;
+  }
+
+  .container-1  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px;
+  }
+
+  .container-1 > div {
+    border: 1px solid #333;
+  }
+
+  .container-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 8px;
+  }
+
+  .container-2 > div {
+    height: 28vw;
+  }
+
+  .container-2 > div img {
+    width: 100%;
+    height: 100%;
+  }
+  /* On screens that are 992px wide or less, the background color is WhiteSmoke */
+    @media screen and (max-width: 992px) {
+
+      #message1 {
+       display: none;
+
+      }
+
+      #message2 {
+      font-style: italic;
+      font-size: 12vw;
+        text-align: center;
+      display: block;
+    }
+
+    #message3 {
+      font-style: italic;
+      font-size: 3vw;
+      text-align: center;
+      display: none;
+    }
+
+    }
+
+    /* On screens that are 600px wide or less, the background color is olive */
+    @media screen and (max-width: 600px) {
+      body {
+        background-color: rgb(0, 0, 0);
+        color: rgb(119, 255, 0);
+      }
+
+      #message1 {
+       display: none;
+       font-size: 20pt;
+      }
+
+      #message2 {
+      font-size: 10vw;
+        text-align: center;
+      display: none;
+    }
+
+    #message3 {
+      font-style: italic;
+      font-size: 3vw;
+      text-align: center;
+      display: block;
+    }
+
+    }
+

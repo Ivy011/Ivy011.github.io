@@ -3,18 +3,34 @@ html
     background-image:  url("background.jpeg");
    
 }
+a{
+    text-decoration: none;
+    color: rgb(7, 81, 156);
+}
 h2{
     text-align: center;
     color: #000000;
     font-size: 40px;
     font-style: bold;
     margin-bottom: 0px;
+    z-index: 50;
+    opacity: 1;
+}
+.behind{
+    background-color: rgba(255, 255, 255,0.5);
+    /* opacity: 0.5; */
+    margin: 0 auto;
+    /* margin-top: -200px;
+    height: 200px; */
+    width: 600px;
+    z-index: 1;
 }
 img {
     max-width: 80%;
     float: center;
 }
 .flex-container {
+
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;

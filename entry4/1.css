@@ -1,0 +1,96 @@
+html {
+  background-color: ghostwhite;
+  box-sizing: border-box;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 125%;
+  margin: 1em;
+}
+
+h1 {
+  text-align: center;
+}
+
+h4 {
+  display: inline;
+  padding-left: 1em;
+}
+
+
+a:visited {
+  color: magenta;
+}
+
+a:hover {
+  color: lime;
+}
+
+a:active {
+  color: lightgreen;
+}
+
+/* this is our button styling */
+/* button style */
+.welcome-button {
+  font-family: fantasy;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #333;
+  background-color: lime;
+  outline: none;
+  border: 1px solid #333;
+  border-radius: 2px;
+  margin: 1em;
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  /* adding a transition for the hover animation */
+  transition: 0.3s ease-in-out all;
+  /* adding an animated "pulsing" background */
+  animation: pulse 1.5s infinite;
+}
+
+/* hovering interaction with css only */
+.welcome-button:hover {
+  color: white;
+  background: magenta;
+  animation: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.container > div {
+  display: flex;
+}
+
+/* define the custom pulse animation used above */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.welcome-text {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: 0.15s ease-in-out all;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.6s ease-in-out all;
+}
+
+

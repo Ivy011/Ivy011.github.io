@@ -1,3 +1,4 @@
+
 var components = document.getElementsByClassName('draggable');
 
 for (let i = 0; i < components.length; i++) {
