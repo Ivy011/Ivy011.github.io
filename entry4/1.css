@@ -66,6 +66,19 @@ a:active {
   display: flex;
 }
 
+.header-fixed {
+  width: 100vw;
+  height: 44px;
+  box-sizing: border-box;
+  padding: 7px 3px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* define the custom pulse animation used above */
 @keyframes pulse {
   0% {

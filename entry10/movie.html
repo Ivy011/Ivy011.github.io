@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>ID movie</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Rotating Words with CSS Animations" />
+        <meta name="keywords" content="css3, animations, rotating words, sentence, typography" />
+
+        <link rel="stylesheet" type="text/css" href="1.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="1.js"></script>
+    </head>
+    <body>
+        <div class="header-fixed">
+            <div class="header-fixed-back">
+                <a href=../index/index.html>
+                    <img src="../index/return2.png" width="35" height="30">
+                </a>
+            </div>
+        </div>
+        <video id="v1" loop>
+              <source src="1.mp4" type="video/mp4"  />
+        </video>
+            <div class="header-fixed-placeholder"></div>
+        <div class="container">
+			<section class="rw-wrapper">
+				<h2 class="rw-sentence">
+					<span>A.I. Artificial Intelligence</span>
+					<br />
+					<div class="rw-words rw-words-1">
+                        <span>David is 11 years old.</span>
+                        <span>He weight 60 pounds.</span>
+                        <span>He is 4 feet, 6 inches tall.</span>
+                        <span>He has brown hair.</span>
+                        <span>His love is real.</span>
+                        <span>But he is not.</span>
+					</div>
+				</h2>
+			</section>
+        </div>
+        </div>
+<script src="1.js"></script>
+    <script>
+	    document.addEventListener('click', function() {
+				document.getElementById('v1').play();
+	    })
+    </script>
+    </body>
+</html>

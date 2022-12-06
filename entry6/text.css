@@ -11,6 +11,18 @@ html, body {
     z-index: -1;
     opacity: 70%;
 }
+.header-fixed {
+    width: 100vw;
+    height: 44px;
+    box-sizing: border-box;
+    padding: 7px 3px;
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .container {
     display: flex;
     position: absolute;

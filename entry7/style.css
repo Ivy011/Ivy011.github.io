@@ -41,3 +41,15 @@ html, body {
     0 0 160px #fff;
 }
 
+.header-fixed {
+    width: 100vw;
+    height: 44px;
+    box-sizing: border-box;
+    padding: 7px 3px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

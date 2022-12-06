@@ -2,6 +2,19 @@ body {
     background-color: Chartreuse;
   }
 
+.header-fixed {
+  width: 100vw;
+  height: 44px;
+  box-sizing: border-box;
+  padding: 7px 3px;
+  position: fixed;
+  top: 0px;
+  left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
   #message1 {
     font-style: italic;
     font-size: 13pt;

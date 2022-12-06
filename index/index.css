@@ -27,7 +27,6 @@ body{
     width: 100px;
     height: 550px;
     overflow: hidden;
-    /* 加个动画过渡 */
     transition: 0.3s;
 }
 .img-box img{
@@ -40,20 +39,20 @@ body{
 }
 
 /* 默认最后一张展开 */
-.img-box:nth-child(1){
-    width: 1000px;
-}
+/* .img-box:nth-child(1){
+    width: 1800px;
+} */
+
 /* 鼠标移入，图片展开 */
 .img-box:hover{
-    width: 2500px;
+    width: 1800px;
 }
-.img-box:hover ~ .img-box:nth-child(5){
-    width: 200px;
-}
+
 
 h1 {
     color: white;
     margin-bottom: 50px;
     margin-top: -100px;
-    font-family: Georgia;
+    font-family: Garamond;
+    font-size: 60px;
 }
