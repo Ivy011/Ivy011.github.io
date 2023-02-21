@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flower</title>
+    <style>
+        * {
+            cursor: url("./images/1.png"), auto;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+        .img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 2;
+            display: none;
+        }
+        .video-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        .prev-btn {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 20px;
+            bottom: 20px;
+            background: url("../bottom/5.png") center no-repeat;
+            background-size: cover;
+            z-index: 99;
+        }
+        .next-btn {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            right: 20px;
+            bottom: 20px;
+            background: url("../bottom/6.png") center no-repeat;
+            background-size: cover;
+            z-index: 99;
+        }
+        #video {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img" id="img1" style="background-image: url('./images/1.jpg')"></div>
+        <div class="img" id="img2" style="background-image: url('./images/2.jpg')"></div>
+        <div class="img" id="img3" style="background-image: url('./images/3.jpg')"></div>
+        <div class="img" id="img4" style="background-image: url('./images/4.png')"></div>
+        <div class="video-wrapper">
+            <video id="video" width="750" height="650" style="object-fit: cover">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="prev_btn" class="prev-btn"></div>
+        <div id="next_btn" class="next-btn"></div>
+    </div>
+    <script>
+        var i = 1;
+        var img1 = document.getElementById("img1");
+        var img2 = document.getElementById("img2");
+        var img3 = document.getElementById("img3");
+        var img4 = document.getElementById("img4");
+        var video = document.getElementById("video");
+        img1.style.display = "block";
+
+        img1.addEventListener("click", function () {
+          img2.style.display = "block";
+          img1.style.display = "none";
+        });
+
+        img2.addEventListener("click", function () {
+          img3.style.display = "block";
+          img2.style.display = "none";
+        });
+
+        img3.addEventListener("click", function () {
+          img4.style.display = "block";
+          img3.style.display = "none";
+          video.style.display = 'block';
+          video.play();
+        });
+
+        document.getElementById("prev_btn").addEventListener("click", function() {
+          window.location.href = "../mainpage/mainpage.html";
+        });
+
+        document.getElementById("next_btn").addEventListener("click", function() {
+          window.location.href = "../end/end.html";
+        });
+    </script>
+</body>
+</html>
