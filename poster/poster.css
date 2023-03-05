@@ -84,4 +84,5 @@ font-family:  Arial, Helvetica, sans-serif,thin;
 .Gradients:hover .H{
   opacity: 1;
   color: aqua !important;
+  z-index: -1;
 }

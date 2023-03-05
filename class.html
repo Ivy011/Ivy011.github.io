@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <script>
+        fetch('class.json')
+        .then(response => response.json())
+        .then(data => {
+
+        // Get list of elements
+        const list =document.getElementById('list');
+
+        // Loop through each items to the list
+        data.forEach(student => {
+        
+         // means li and a tag in html
+         const li = document.createElement('li');
+         const a = document.createElement('a');
+
+        // Set the text content and herf attribute fot the list
+        a.textContent = student.Name;
+        a.href = "https://"+ student.Github + ".github.io";
+       
+        // add a tag link to the list
+        li.appendChild(a);
+        list.appendChild(li);
+        });
+        })
+    </script>
+</head>
+<body>
+    <ul id="list">
+        <!-- <li><a href="http://ivy011.github.io">whatever</a></li> -->
+    </ul>
+    <style>
+        li a{
+            color: aqua;
+        }
+        li :hover{
+            color:blue;
+        }
+    </style>
+</body>
+</html>
