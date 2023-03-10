@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recreat</title>
+    <link rel="stylesheet" href="recreat.css">
+    <script>
+        fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+
+        // Get list of elements
+        const list =document.getElementById('list');
+        const list1 =document.getElementById('list1');
+
+        // Loop through each items to the list
+        data.forEach(row => {
+        
+         // means li and a tag in html
+         const div = document.createElement('div');
+         div.className = "ABa";
+
+         const li = document.createElement('li');
+         const img = document.createElement('img');
+
+         img.src = row.Right;
+         img.className = 'img1';
+
+         const textL = document.createElement('div');
+         textL.className = 'textL';
+         textL.textContent = row.Left1;
+
+         const textR = document.createElement('div');
+         textR.className = 'textR';
+         textR.textContent = row.Left2;
+
+         div.appendChild(textL);
+         div.appendChild(textR);
+
+         li.appendChild(img);
+         li.appendChild(textL);
+
+         const BI = document.getElementById('BI');
+
+         div.addEventListener("mouseover", () => {
+            const img = document.createElement('img');
+            img.className = 'img';
+            img.src = row.Right;
+            BI.innerHTML = '';
+            BI.appendChild(img);
+         });
+
+         list.appendChild(div);
+         list1.appendChild(li);
+        });
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nevagationbar" id="nev">
+            <div class="A">
+            Fundament Services</div>
+            <div class="B">
+                Work</div>
+            <div class="C">
+                About</div>
+        </div>
+        <div class="nevagationbar" id="mobile">
+            <div class="A">
+            Fundament Services</div>
+            <div class="B">
+                Menu</div>
+        </div>
+        <div class="brand">
+            All, Visual Identity & Branding, Editorial & Book Design, Poster & Graphic, Photography, Digital
+        </div>
+        <div class="content" id="middle">
+            <div class="AB" id="list">
+            </div>
+            <div class="BC" id="BI">
+            
+            </div>
+        </div>
+        <div class="content" id="mobilemiddle">
+            <ul id="list1">
+            </ul>
+        </div>
+        <div class="footer">
+            © 2022 F.S. ︎ ︎
+        </div>
+    </div>
+</body>
+</html>
