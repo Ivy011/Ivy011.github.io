@@ -14,7 +14,7 @@
         // Get list of elements
         const list =document.getElementById('list');
         const list1 =document.getElementById('list1');
-
+        console.log(data)
         // Loop through each items to the list
         data.forEach(row => {
         
@@ -32,6 +32,10 @@
          textL.className = 'textL';
          textL.textContent = row.Left1;
 
+         const textL1 = document.createElement('div');
+         textL1.className = 'textL';
+         textL1.textContent = row.Left1;
+
          const textR = document.createElement('div');
          textR.className = 'textR';
          textR.textContent = row.Left2;
@@ -40,7 +44,7 @@
          div.appendChild(textR);
 
          li.appendChild(img);
-         li.appendChild(textL);
+         li.appendChild(textL1);
 
          const BI = document.getElementById('BI');
 

@@ -12,12 +12,14 @@ body{
     align-items: center;
     padding-left:1vw;
     padding-right:1vw;
+    font-size: 26px;
 }
 .brand{
     display: flex;
     border-bottom:2px solid black;
     align-items: center;
     padding:0 1vw;
+    font-size: 26px;
 }
 .A{
     flex:1;
@@ -48,6 +50,7 @@ body{
     display: flex;
     border-bottom:2px solid black;
     padding:1vw;
+    font-size: 18px;
 }
 .ABa:hover {
     background-color: black;
@@ -64,6 +67,11 @@ body{
     border-top:2px solid black;
     align-items: center;
     padding:1vw;
+    position: fixed;
+    bottom: 0;
+    background-color: aliceblue;
+    width: 100vw;
+    font-size: 26px;
 }
 .img{
     height:25vw;
