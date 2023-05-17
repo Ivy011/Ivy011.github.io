@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <main>
+      <div id="nyc" class="nyc">Floral Parks NYC</div>
+      <div class="navbar">
+        <div class="navbar-left">
+          <img id="triangle" class="triangle" src="images/triangle.png" />
+          <div id="sort_title">
+            <div id="sort_month">Sort by Month</div>
+            <div id="sort_acres">Sort by Acres</div>
+          </div>
+        </div>
+        <div id="nav_month">
+          <div class="navbar-item" data-month="1">Jan.</div>
+          <div class="navbar-item" data-month="2">Feb.</div>
+          <div class="navbar-item" data-month="3">Mar.</div>
+          <div class="navbar-item" data-month="4">Apr.</div>
+          <div class="navbar-item" data-month="5">May</div>
+          <div class="navbar-item" data-month="6">Jun.</div>
+          <div class="navbar-item" data-month="7">Jul.</div>
+          <div class="navbar-item" data-month="8">Aug.</div>
+          <div class="navbar-item" data-month="9">Sep.</div>
+          <div class="navbar-item" data-month="10">Oct.</div>
+          <div class="navbar-item" data-month="11">Nov.</div>
+          <div class="navbar-item" data-month="12">Dec.</div>
+        </div>
+        <div id="nav_acres">
+          <div id="all">All</div>
+          <div id="low">&lt; 10</div>
+          <div id="middle">10-60</div>
+          <div id="height">&gt;60</div>
+        </div>
+      </div>
+      <div id="intro" class="intro">
+        <div class="intro-title">Floral Parks NYC</div>
+        <div class="intro-subtitle">I hope that through this website, audiences will know the size of the garden, where it is located on the map, and how common flowers grow in the park each month in New York City.</div>
+      </div>
+<!--      <div id="mask" class="mask"></div>-->
+      <div id="modal">
+        <ol id="modal_content">
+
+        </ol>
+      </div>
+      <div id="axis" class="axis">
+        <img src="images/axis.png" />
+      </div>
+      <div id="info" class="info">
+        <div id="info_name"></div>
+        <div id="info_desc"></div>
+      </div>
+      <div class="camera">
+        <img id="camera" src="images/camera.png" alt="Camera" />
+        <img id="location" src="images/location.png" alt="Location" />
+      </div>
+      <div id="nyc_info" class="nyc_info">
+        <p>For this project, we were asked to visualize open data about New York City
+          without using representative images or maps. While clearly presenting the data, 
+          we also had to develop an idea based on the data. I chose data on the size, 
+          location, and addresses of the parks in New York City. I also researched the 
+          flowers that were common in NYC  each month and how they were grown in the parks. 
+          I combined information on New York City itself, and its parks on the website. </p>
+        <p>On the website, by clicking on different months, viewers can learn about the most common flowers in New York City.  They will then see which parks have that type of flower growing in its park, and the size of the park. I designed the flower shapes to match the same shape and color of the actual kind of flowers. And I made add animation to mimic the natural growth of the flowers. I also replaced the background images with the four seasons as a way to correspond the months to the seasons.</p>
+        <p>At the bottom left of the screen is the name of the flower, and if you hover over the flower’s name you will see a brief description of the flower. Each flower represents a park, and the location of the flower on the screen corresponds to its location on Google Maps. When the viewer clicks on the flower in the screen, the park information will appear. I differentiated the size of the gardens according to large and small, 1-10 acres for small gardens, 10-60 for medium gardens, and 60+ for large gardens. I hope that through this website, audiences will know the size of the garden, where it is located on the map, and how common flowers grow in the park each month in New York City.</p>
+        <p>I designed a small function that when the mouse is detected to stop for 5 seconds without moving, the name of the item will appear on the screen. This way the viewer can remember the name and purpose of the site.</p>
+      </div>
+    </main>
+    <script src="sketch.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

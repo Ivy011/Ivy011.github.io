@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #album_imgs {
+            overflow-y: auto;
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            padding: 0 50px;
+            margin-top: 0;
+            height: calc(100% - 130px);
+        }
+        .modal-filter {
+            margin-top: 20px;
+            justify-content: flex-start;
+            margin-bottom: 60px;
+        }
+        #collect {
+        position:absolute;
+        top:26px;
+        left:35px;
+        font-size:30px;
+        }
+        #explore {
+        position: absolute;
+        top: 26px;
+        left: 277px;
+        font-size:30px;
+        }
+        #all {
+        position: absolute;
+        top: 26px;
+        left: 555px;
+        font-size:30px;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="street.html"></iframe>
+    <div id="desk"></div>
+    <div id="mask"></div>
+    <div id="mask1"></div>
+    <div id="mask2"></div>
+    <div id="desk-modal" class="modal">
+        <div class="modal-inner modal-inner-white modal-inner-desk-bg">
+            <img id="close_img" class="close-img" src="images/close.png">
+            <div class="modal-filter">
+                <div id="collect">Collect</div>
+                <div id="explore">Explore</div>
+                <div id="all">All</div>
+            </div>
+            <div id="album_imgs" class="left"></div>
+        </div>
+    </div>
+    <div id="desk-modal2" class="modal">
+        <div class="modal-inner">
+            <img id="close_img2" class="close-img" src="images/close.png">
+            <img id="people_img">
+            <h2 id="name"></h2>
+            <p id="feature"></p>
+            <p id="story"></p>
+        </div>
+    </div>
+    <div id="desk-modal1" class="modal" style="display: block">
+        <div class="modal-inner modal-inner-white modal-inner-desk-bg1">
+            <img id="close_img1" class="close-img" src="images/close-white.png">
+            <div>
+                <h1>Virtual Reminiscence</h1>
+                <h3>My inspiration for this Virtual Reminiscence Project came from my own<br>
+                    personal experience of growing up in a rural area with my grandparents,<br> 
+                    and later moving to the city with my parents. As a child, I was curious about<br>
+                    some of the old and worn-out items in our house, such as a box full of<br>
+                    fabric scraps. My grandmother told me that they had saved these small <br>
+                    pieces of fabric because they were poor and couldn't afford to buy a whole <br>
+                    inch of fabric. But now, most people no longer need to save every little piece <br>
+                    of fabric. I asked my grandmother why she kept the box full of scraps if they<br>
+                    were no longer useful? My grandmother replied by saying that they might<br>
+                    come in handy someday. At that point, my mother said that the patches on<br>
+                    my socks were made from scraps stored in that box. This childhood memory<br>
+                    inspired me to think about why people still hold on to useless items in our<br>
+                     modern society, despite the advanced developments we have today. <br>
+                    I am interested in the nostalgia that is attached to older objects. With that in<br>
+                    mind, I started collecting other peoples' stories that they held onto <br>
+                    alongside their personal items that are from the past.</h3>
+                    
+                <h3>In the city, I found that there are some elderly people who still live their everyday<br>
+                    lives as if they are still a part of this  past version of life. They kept  some older <br>
+                   habits and lifestyles, such as repairing and continuing to use things even after <br>
+                   they had become worn out. For example, when I asked my parents for a new <br>
+                   television, after it stopped working, they rejected the suggestion and said that <br>
+                   they would try to fix it on their own.  This behavior is not understood by young <br>
+                   people and does not align with the modern concept of life. In modern society, it <br>
+                   is understood that older things should be thrown away and new ones are <br>
+                   bought. For instance,  everyone likes to buy new things, such as  cell phones <br>
+                   and computers. This phenomenon can also be partly attributed to the fact that <br>
+                   older people are neglected by modern society and are unaware of other  <br>
+                   convenient ways of living due to this neglect.</h3>
+                   
+                <h3>Therefore, I also want to reflect on the conflict between the two ideologies and <br>
+                    different lifestyles in my work by bringing awareness to this phenomenon and <br>
+                    help the audience understand why t the elderly still choose to live in these old <br>
+                    ways while being  in contemporary society. As a young person, I've noticed that <br>
+                    our generation also experiences nostalgia.  Rather than keeping old items in our <br>
+                    homes the way older people do, we choose to preserve memories in a different <br> 
+                    way that is done with our computers and/or cell phones. <br>
+                    For example, I kept a picture of a doll on my computer that  was a gift from my <br>
+                    grandfather on my 13th birthday. The doll has been discarded, but through this <br>
+                    photo, I can still feel the emotional connection to it.<br>
+                    During the project, I started to think about how I would reflect all of these ideas <br>
+                    at the same time: the creation of nostalgia, the contrast between the past  <br>
+                    lifestyle with the present lifestyle,  and the changes that technology has brought <br>
+                    to these rural and city based lives. </h3>
+                <h3>I tried to use new techniques to deal with old objects.  After a series of trials <br>
+                    and investigations, I finally chose a cyberpunk as the project’s  representation.<br>
+                     I chose this because cyberpunk was  a good way to showcase the conflict <br>
+                    between high-tech and traditional, outdated ways of life that were compelling.<br>
+                    
+                    I chose to create a webpage in the form of a game that allows viewers to <br>
+                    explore the items and their stories on their own, while also allowing the users to <br>
+                    experience a sense of virtual reality. The game allows users to search for <br>
+                    objects, click on street pictures to enter different rooms, and view collections of <br>
+                    objects. Through this interactive experience, I hope to evoke emotions related to <br>
+                    nostalgia and our attachment to objects, highlight the differences in our ways of <br>
+                    life based on age and location, and how technology has impacted this.</h3>
+                    
+            </div>
+        </div>
+    </div>
+    <div id="desk-modal3" class="modal" style="display: none">
+        <div class="modal-inner screen-moving-modal-inner">
+            <img id="close_img3" class="close-img" src="images/close-white.png">
+            <div class="screen-moving-wrapper">
+                <div class="screen-moving">
+                    <div id="album_imgs2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img id="start_bg" src="images/start-bg.jpg" alt="Start Background">
+    <img id="start_mobile_bg" src="images/start-mobile-bg.jpg" alt="Start Background">
+    <img id="hint_bg" src="images/Hint.png" alt="Hint" />
+    <div id="gesture" class="gesture">
+        <img id="gesture_up" class="gesture-up" src="images/move/gesture-up.png">
+        <img id="gesture_right" class="gesture-right" src="images/move/gesture-right.png">
+        <img id="gesture_down" class="gesture-down" src="images/move/gesture-down.png">
+        <img id="gesture_left" class="gesture-left" src="images/move/gesture-left.png">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

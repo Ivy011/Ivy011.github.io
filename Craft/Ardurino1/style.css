@@ -1,0 +1,137 @@
+@font-face {
+  font-family: SalihKizilkaya;
+  src: url("fonts/Salih Kizilkaya - SK Gothenburg Rounded Regular.ttf");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: SalihKizilkaya, sans-serif;
+}
+canvas {
+  display: block;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.navbar {
+  position: absolute;
+  align-items: center;
+  top: 30px;
+  display: flex;
+  margin-bottom: 15px;
+}
+#sort_title {
+  cursor: pointer;
+  position:fixed;
+  left: 60px;
+  top: 38px;
+  font-size: 30px;
+}
+#nav_month {
+  display: flex;
+}
+.navbar-item {
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  /* border: 1px solid #333; */
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 20px;
+  font-size: 30px;
+}
+.navbar-item:hover {
+  color: white;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.intro-title {
+  font-size: 100px;
+  white-space: nowrap;
+}
+.intro-subtitle {
+  font-size: 30px;
+}
+.logo {
+  position: absolute;
+  right: 80px;
+  top: 38px;
+  font-size: 30px;
+}
+
+.mask {
+  position: absolute;
+  left: 868px;
+  top: 270px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0.5);
+  cursor: pointer;
+}
+#modal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+#modal_content {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+#nav_acres {
+  display: none;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 50px;
+}
+.axis img {
+  width: 100px;
+  height: 100px;
+  position:fixed;
+  right: 100px;
+  bottom: 50px;
+}
+#nav_acres > div {
+  cursor: pointer;
+  height: 45px;
+    line-height: 45px;
+    text-align: center;
+    /* border: 1px solid #333; */
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 20px;
+    font-size: 30px;
+}
+
+.info {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
+#info_desc {
+  display: none;
+  max-width: 800px;
+}

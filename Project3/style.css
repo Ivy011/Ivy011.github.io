@@ -1,0 +1,277 @@
+@font-face {
+  font-family: SalihKizilkaya;
+  src: url("fonts/Salih Kizilkaya - SK Gothenburg Rounded Regular.ttf");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: SalihKizilkaya, sans-serif;
+}
+canvas {
+  display: block;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.navbar {
+  position: absolute;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  top: 30px;
+  display: flex;
+  margin-bottom: 15px;
+}
+#sort_title {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  margin-right: 20px;
+  /*cursor: pointer;*/
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
+  font-size: 30px;
+}
+#sort_title.active {
+  height: 100px;
+}
+#sort_title > div {
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+}
+#nav_month {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 400px;
+}
+.navbar-item {
+  height: 45px;
+  line-height: 50px;
+  text-align: center;
+  /* border: 1px solid #333; */
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 20px;
+  font-size: 30px;
+  color: #B8C0C2;
+}
+.navbar-item.active {
+  color: black;
+}
+/*.navbar-item:hover {*/
+/*  color: white;*/
+/*  background-color: rgba(255, 0, 0, 0.3);*/
+/*}*/
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.intro-title {
+  font-size: 100px;
+  white-space: nowrap;
+}
+.intro-subtitle {
+  font-size: 30px;
+}
+.logo {
+  position: absolute;
+  left: 50px;
+  top: 30px;
+}
+.mask {
+  position: absolute;
+  left: 868px;
+  top: 270px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0.5);
+  cursor: pointer;
+}
+#modal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+#modal_content {
+  /*opacity: 0;*/
+  transition: all 1s ease-in-out;
+  max-height: 90%;
+  overflow-y: auto;
+}
+/* Chrome, Edge and Safari */
+#modal_content::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+}
+#modal_content::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #DFE9EB;
+}
+
+#modal_content::-webkit-scrollbar-track:hover {
+  background-color: #B8C0C2;
+}
+
+#modal_content::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+
+#modal_content::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgb(75, 75, 75, 0.5);
+}
+
+#modal_content::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+#modal_content::-webkit-scrollbar-thumb:active {
+  background-color: rgb(180, 180, 180);
+}
+#modal_content li {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+#modal_content li.delete {
+  text-decoration: line-through;
+}
+#modal_content li .delete-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+#nav_acres {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 50px;
+  margin-left: 420px;
+}
+
+#nav_acres > div {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.axis {
+  position: absolute;
+  left: 57px;
+  bottom: 40px;
+}
+
+.axis img {
+  width: 100px;
+  height: 100px;
+}
+
+.info {
+  position: absolute;
+  left: 400px;
+  top: 860px;
+  font-size: 25px;
+}
+
+.nyc_info {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0 ,0, 0, 0.3);
+  font-size:20px;
+}
+
+.nyc_info p {
+  max-width: 60%;
+  color: white;
+}
+
+#info_desc {
+  display: none;
+  max-width: 800px;
+}
+
+.triangle {
+  width: 35px;
+  margin-right: 20px;
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.triangle.active {
+  transform: rotate(180deg);
+}
+
+.camera {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
+.camera img {
+  width: auto;
+  height: 50px;
+  cursor: pointer;
+}
+
+.camera img + img {
+  margin-left: 20px;
+}
+
+.sort-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.area-header {
+  display:flex;
+  align-items: center;
+  width: 200px;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+
+.navbar-left {
+  position: absolute;
+  left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.nyc {
+  position: absolute;
+  left: 150px;
+  bottom: 100px;
+  cursor: pointer;
+  font-size: 25px;
+}
